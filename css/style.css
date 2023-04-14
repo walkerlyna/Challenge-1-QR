@@ -29,17 +29,15 @@ body {
     font-family: var(--FuenteBody);
     font-size: 1.5rem;
     background-color: var(--grisClaro);
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
 /* Globales */
 .contenedor {
-    max-width: 40rem;
-    width: 90%;
+    width: 40rem;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 img {
@@ -64,17 +62,21 @@ p {
     padding: 1.5rem;
     margin: 3rem;
     border-radius: 1.7rem;
+    box-shadow: 0 0 17px 1.2px rgb(0, 0, 0.2);
 }
 
 .uno, .dos {
     margin: 2rem 2.5rem;
 }
 
-
+.flex {
+    display: flex;
+    justify-content: center;
+}
 
 /* footer */
 
-.attribution a {
+.link a {
     text-decoration: none;
 }
 
@@ -90,9 +92,4 @@ a:hover {
     color: hotpink;
   }
 
-
-  @media (max-width: 375px){
-  .contenedor {
-      width: 115%;                                                       
-  }
-  }
+  
